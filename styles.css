@@ -1,0 +1,53 @@
+:root {
+    --black: #151514;
+    --mint: #B2F59F;
+    --dark-green: #3B433A;
+    --lavender: #D09FF5;
+    --sage: #6C9670;
+    --dark-gray: #323232;
+    --pink: #FCC9CA;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('./fonts/Monocraft.woff2') format('woff2'),
+        url('./fonts/Monocraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    background-color: var(--black);
+    color: var(--lavender);
+    font-family: 'Monocraft';
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 0 2rem;
+    height: 95px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: var(--mint) 1px solid;
+
+
+}
+
+ul {
+    padding: 1.38rem;
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        list-style: none;
+        text-decoration: none;
+    }
+}
