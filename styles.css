@@ -20,6 +20,8 @@
     background-color: var(--black);
     color: var(--lavender);
     font-family: 'Monocraft';
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 body {
@@ -41,7 +43,7 @@ nav {
 }
 
 ul {
-    padding: 1.38rem;
+    padding: 0 5rem;
     gap: 15px;
     display: flex;
     flex-direction: row;
@@ -49,5 +51,90 @@ ul {
     li {
         list-style: none;
         text-decoration: none;
+    }
+}
+
+.hero {
+    padding: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.hero-container {
+    display: flex;
+
+
+
+}
+
+.hero-content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 2rem;
+
+    p,
+    h2 {
+        color: white;
+    }
+
+    button {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+.intro-content {
+    text-align: justify;
+}
+
+.photos-window {
+    width: 100%;
+    color: var(--mint);
+
+    img {
+        width: auto;
+        height: 20rem;
+
+    }
+}
+
+
+
+.window-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    border: solid 1px var(--dark-green);
+    color: var(--mint);
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.window-box {
+    height: 1rem;
+    width: 1rem;
+    border: solid 1px var(--dark-green);
+
+    svg {
+        height: 0.5rem;
+        width: auto;
     }
 }
