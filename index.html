@@ -1,209 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Natalia Martinez | Brand & Web Designer</title>
+    <meta
+      name="description"
+      content="Natalia — Brand and web designer helping small businesses create authentic visual identities and websites. Portfolio, packages, and contact."
+    />
+    <script
+      src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="#home">
+          <img src="assets/cyberm-logo-long.svg" alt="Cybermapache logo" />
+        </a>
 
-<body>
-    <nav>
-        <img src="assets/cyberm-logo-icon.svg">
         <ul>
-            <a>
-                <li>
-                    Home
-                </li>
-            </a>
-            <a>
-                <li>
-                    About
-                </li>
-            </a>
-            <a>
-                <li>
-                    Portfolio
-                </li>
-            </a>
-            <a>
-                <li>
-                    Contact
-                </li>
-            </a>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-    <div class="hero">
-        <img src="assets/sparkle2.svg">
-        <div class="hero-banner">
-            <p>Introducing...</p>
-            <img src="assets/cyberm-logo-long.svg">
-        </div><img src="assets/sparkle1.svg">
-    </div>
-    <div class="hero-container">
-        <div class="hero-wrapper">
-            <div class="hero-content">
-                <h1>Greetings</h1>
-                <div class="intro-content">
-                    <h2>My Name is Natalia Martinez</h2>
-                    <p>— a multidisciplinary designer blending creativity with development. I specialize in crafting
-                        bold
-                        visuals,
-                        thoughtful user experiences, and compelling digital stories. </p>
+      </nav>
+    </header>
 
-                    <p>
-                        Whether it's brand design, UI/UX, or creative direction, I bring ideas to life with clarity and
-                        personality.
-                        Let’s make something beautiful together.</p>
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">
+          Creating Designs That Are <br />
+          Out-Of-This-World
+        </h1>
+        <p>
+          A graphic and web designer helping businesses create brands that are
+          innovative and exciting
+        </p>
+
+        <a class="cta-btn" href="#contact" aria-label="Jump to contact section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            focusable="false"
+            aria-hidden="true"
+          >
+            <g clip-path="url(#clip0_73_1413)">
+              <path
+                d="M29.372 26.384C26.504 27.296 23.724 24.764 24.366 21.824C24.3927 21.7 24.426 21.578 24.466 21.458C26.048 16.474 27.066 15.478 27.494 15.048C27.5495 14.9883 27.5907 14.9168 27.6146 14.8388C27.6385 14.7609 27.6445 14.6785 27.632 14.598C27.6225 14.5253 27.5964 14.4559 27.5559 14.3948C27.5153 14.3338 27.4613 14.2829 27.398 14.246C25.427 13.3513 23.2886 12.885 21.124 12.878C16.9771 12.8785 13.0001 14.526 10.0676 17.4581C7.13506 20.3903 5.48709 24.367 5.48603 28.514C5.4573 29.067 5.4573 29.621 5.48603 30.174C5.49032 30.2451 5.48052 30.3163 5.45718 30.3836C5.43384 30.4508 5.39742 30.5128 5.35003 30.566C3.55346 32.8562 2.10453 35.3989 1.05003 38.112C0.602306 38.9942 0.412476 39.9849 0.502334 40.9701C0.592192 41.9554 0.958095 42.8953 1.55803 43.682C2.29203 44.382 3.27803 44.756 4.29403 44.718C7.11706 44.3939 9.80966 43.3507 12.114 41.688C12.19 41.6409 12.2776 41.6159 12.367 41.6159C12.4564 41.6159 12.5441 41.6409 12.62 41.688C22.722 48.234 36.12 41.388 36.74 29.368C36.7534 29.084 36.76 28.7993 36.76 28.514C36.7529 26.9919 36.5287 25.4787 36.094 24.02C36.0691 23.9442 36.0258 23.8758 35.9678 23.8209C35.9098 23.7661 35.8391 23.7266 35.762 23.706C35.6963 23.6692 35.6223 23.6499 35.547 23.6499C35.4717 23.6499 35.3977 23.6692 35.332 23.706C33.4856 24.8826 31.4779 25.7847 29.372 26.384ZM19.266 27.44C19.5229 27.1954 19.8598 27.0522 20.2141 27.037C20.5685 27.0218 20.9164 27.1356 21.1933 27.3573C21.4702 27.579 21.6573 27.8936 21.72 28.2427C21.7826 28.5918 21.7166 28.9518 21.534 29.256C13.872 36.508 7.67403 40.164 5.19403 40.75C5.11261 40.7746 5.02604 40.7767 4.94353 40.756C4.86102 40.7353 4.78568 40.6926 4.72553 40.6325C4.66538 40.5723 4.62269 40.497 4.60199 40.4145C4.5813 40.332 4.58338 40.2454 4.60803 40.164C4.84232 39.2665 5.18342 38.4003 5.62403 37.584C5.87803 37.094 6.17003 36.548 6.52403 35.942C6.57253 35.8753 6.63738 35.8223 6.71235 35.7879C6.78731 35.7536 6.86986 35.7391 6.95203 35.746C7.03752 35.7459 7.12136 35.7696 7.19413 35.8144C7.26691 35.8593 7.32574 35.9235 7.36403 36C7.39251 36.0581 7.43344 36.1091 7.48391 36.1496C7.53438 36.19 7.59315 36.2188 7.65603 36.234C7.78669 36.274 7.91736 36.274 8.04803 36.234C12.0697 33.681 15.8261 30.7353 19.266 27.44Z"
+                fill="currentColor"
+              />
+              <path
+                d="M34.57 19.192C34.5621 18.4161 34.2539 17.6735 33.71 17.12C33.1485 16.5937 32.4077 16.3008 31.638 16.3008C30.8684 16.3008 30.1276 16.5937 29.566 17.12C28.55 18.748 27.766 20.51 27.24 22.358C27.1882 22.5315 27.1845 22.7157 27.2293 22.8911C27.274 23.0665 27.3655 23.2265 27.494 23.354C27.6207 23.4777 27.7785 23.5648 27.9507 23.606C28.1229 23.6472 28.3031 23.641 28.472 23.588C30.3202 23.0746 32.085 22.298 33.712 21.282C34.258 20.722 34.564 19.974 34.57 19.192ZM45.554 3.47601L42.506 4.78601C41.79 5.11001 41.13 5.54601 40.552 6.07601L38.284 8.38201C37.0042 8.04935 35.6616 8.04159 34.3781 8.35942C33.0945 8.67725 31.9107 9.31061 30.934 10.202L30.25 10.884C30.0704 11.0704 29.97 11.3191 29.97 11.578C29.97 11.8369 30.0704 12.0856 30.25 12.272L38.538 20.56C38.724 20.746 38.978 20.852 39.242 20.852C39.3697 20.8513 39.496 20.8251 39.6134 20.7749C39.7309 20.7248 39.8372 20.6517 39.926 20.56L40.61 19.876C41.5073 18.9071 42.1446 17.7267 42.4625 16.445C42.7804 15.1633 42.7686 13.8219 42.428 12.546L44.772 10.2C45.3054 9.62676 45.7357 8.96571 46.044 8.24601L47.352 5.19601C47.4902 4.94543 47.5459 4.65764 47.5111 4.37361C47.4762 4.08957 47.3527 3.82376 47.158 3.61401C46.9402 3.42324 46.6671 3.30699 46.3786 3.28217C46.0901 3.25735 45.8012 3.32525 45.554 3.47601Z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_73_1413">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          Let's Launch Your Brand
+        </a>
+      </section>
+
+      <!-- Resume / About -->
+      <section class="resume" id="about" aria-labelledby="resume-heading">
+        <h2 id="resume-heading">Greetings! I'm Natalia</h2>
+        <p>
+          A designer focused on helping small businesses tell their story
+          through intentional design. I create brands and websites that feel
+          authentic, cohesive and built to grow. I love collaborating with
+          individuals to bring their ideas to life with my art. I have always
+          loved art and technology so it was natural for me to begin working in
+          the web design industry. I’ve been freelancing artwork and graphic
+          designs since 2018 so you can feel confident you are in good hands!
+        </p>
+        <div class="resume-content">
+        <div class="exp-edu">
+            <div class="experience">
+              <h2>Experience</h2>
+              <div class="job-list">
+                <h3>Lead Designer</h3>
+                <h4>2021-2025 | Bosque Applications</h4>
+                <p>
+                  Directed design for diverse clients, building accessible
+                  websites, full UX systems and visual identities.
+                </p>
+              </div>
+              <div class="job-list">
+                <h3>Freelance Web Designer</h3>
+                <h4>Self-Employed | 2018-Present</h4>
+                <p>
+                  Build brand identities and logos for small businesses, design
+                  their websites, and boost their SEO performance
+                </p>
+              </div>
+            </div>
+            <div class="education">
+              <h2>Education</h2>
+              
+                <div class="job-list">
+                  <h3>AAS Visual Communications/Web Design</h3>
+                  <h4>Lone Star College, Montgomery TX</h4>
                 </div>
-                <button>See My Portfolio</button>
-            </div>
-            <div class="photos-window">
-                <div class="window-header">
-                    <div class="window-icons">
-                        <iconify-icon icon="pixelarticons:image-frame"></iconify-icon>
-                        <p class="window-title">photos</p>
-                    </div>
-                    <div class="window-nav">
-                        <div class="window-box"><img src="assets/minimize-icon.svg"></div>
-                        <div class="window-box"><iconify-icon icon="pixelarticons:frame"></iconify-icon></div>
-                        <div class="window-box"><iconify-icon icon="pixelarticons:close"></iconify-icon></div>
-                    </div>
+
+                <div class="job-list">
+                  <h3>Web Design Certificate Level II</h3>
+                  <h4>Lone Star College, Montgomery TX</h4>
                 </div>
-
-                <div class="small-gallery">
-                    
-                    <div class="arrow-btn"><iconify-icon icon="pixelarticons:arrow-left"></iconify-icon></div>
-                    <div class="photo-window-content">
-                        <div class="image"><img src="assets/portfolio-portrait 1.png"></div>
-                    </div>
-                    <div class="arrow-btn"><iconify-icon icon="pixelarticons:arrow-right"></iconify-icon></div>
-                </div>
-
-                <div class="photo-tools">
-                    <div class="tools-btn"><iconify-icon icon="pixelarticons:crop"></iconify-icon></div>
-                    <div class="tools-btn"><iconify-icon icon="pixelarticons:trash"></iconify-icon></div>
-
-
-                    <div class="tools-btn"><iconify-icon icon="pixelarticons:check"></iconify-icon></div>
-                    <div class="tools-btn"><iconify-icon icon="pixelarticons:reload"></iconify-icon></div>
-                </div>
+              
             </div>
-        </div>
-    </div>
+          </div>
+          <div class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="software">
+                <iconify-icon
+                  icon="mdi:figma"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <p>Figma</p>
+              </div>
 
-    <div class="skills">
-        <h2>What Can I Do?</h2>
-        <p>loading skills.exe</p>
+              <div class="software">
+                <iconify-icon
+                  icon="mdi:adobe"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <p>Adobe</p>
+              </div>
 
-        <div class="skills-window">
-            <div class="skills-header">
-                <iconify-icon icon="pixelarticons:lightbulb-on"></iconify-icon>
-                <p class="window-title">skills.exe</p>
-                <div class="window-box"><img src="assets/minimize-icon.svg"></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:frame"></iconify-icon></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:close"></iconify-icon></div>
+              <div class="software">
+                <iconify-icon
+                  icon="mdi:language-html5"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <p>HTML</p>
+              </div>
+
+              <div class="software">
+                <iconify-icon
+                  icon="mdi:language-css3"
+                  aria-hidden="true"
+                ></iconify-icon>
+                <p>CSS</p>
+              </div>
             </div>
-            <h3 class="skills-title">Graphic Design</h3>
-            <p class="skills-content">I help businesses and individuals create bold, memorable brand identities that
-                stand out. From logo design to full brand identity systems, I craft visuals that capture the essence of
-                your brand and tell your story. My design approach blends whimsy and personality with strategic
-                aesthetics, ensuring that your brand is both eye-catching and cohesive across all platforms. Whether you
-                need a logo, brand guidelines, or custom graphics, I focus on creating designs that leave a lasting
-                impression.
-            </p>
+          </div>                
+           <img
+          src="assets/portrait.png"
+          alt="Portrait of Natalia, brand and web designer"
+        />
+          </div> 
 
-            <button class="learn-more">Learn More</button>
         </div>
 
-        <div class="skills-icon">
-            <iconify-icon icon="solar:figma-bold-duotone"></iconify-icon>
-            <p>Figma</p>
+        <div class="cta-section">
+        <h2>Ready to Kickstart your next project?</h2>
+        <a
+          class="cta-btn"
+          href="#contact"
+          aria-label="Contact Natalia to start a project"
+        >
+          <iconify-icon
+            icon="streamline-ultimate:space-rocket-earth-bold"
+            aria-hidden="true"
+          ></iconify-icon>
+          Let's Launch Your Brand
+        </a>
         </div>
-        <div class="skills-icon">
-            <iconify-icon icon="ic:round-adobe"></iconify-icon>
-            <p>Adobe</p>
-        </div>
+      </section>
 
+      <!-- Packages -->
+      <section
+        class="design-packages"
+        id="packages"
+        aria-labelledby="packages-heading"
+      >
+        <h2 id="packages-heading">Design Packages</h2>
+        <p>
+          Elevate your brand with a cohesive visual identity that makes a
+          lasting impression.
+        </p>
 
-        <div class="skills-window">
-            <div class="skills-header">
-                <iconify-icon icon="pixelarticons:lightbulb-on"></iconify-icon>
-                <p class="window-title">skills.exe</p>
-                <div class="window-box"><img src="assets/minimize-icon.svg"></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:frame"></iconify-icon></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:close"></iconify-icon></div>
-            </div>
-            <h3 class="skills-title">Web Design</h3>
-            <p class="skills-content">I specialize in crafting beautiful, functional, and responsive websites from the
-                ground up. I can code a static one-page website from scratch, ensuring clean and efficient structure.
-                With strong skills in CSS and SCSS, I bring designs to life with custom styling, animations, and modern
-                aesthetics to create a polished and engaging user experience. Whether you need a sleek landing page or a
-                fully styled interface, I focus on making every detail visually striking and user-friendly.</p>
+        <div class="pack-list">
+          <article class="pack1" aria-labelledby="pack1-title">
+            <header class="pack-head">
+              <iconify-icon
+                icon="mdi:palette"
+                aria-hidden="true"
+              ></iconify-icon>
+              <h3 id="pack1-title">Starter</h3>
+              <p class="pack-description">Essential Brand Identity</p>
+            </header>
 
-            <button class="learn-more">Learn More</button>
-        </div>
-
-        <div class="skills-icon">
-            <iconify-icon icon="mingcute:code-fill"></iconify-icon>
-            <p>HTML</p>
-        </div>
-        <div class="skills-icon">
-            <iconify-icon icon="fluent:style-guide-24-filled"></iconify-icon>
-            <p>CSS</p>
-        </div>
-        <div class="skills-icon">
-            <iconify-icon icon="ph:file-js-bold"></iconify-icon>
-            <p>JAVASCRIPT</p>
-        </div>
-
-        <div class="skills-window">
-            <div class="skills-header">
-                <iconify-icon icon="pixelarticons:lightbulb-on"></iconify-icon>
-                <p class="window-title">skills.exe</p>
-                <div class="window-box"><img src="assets/minimize-icon.svg"></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:frame"></iconify-icon></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:close"></iconify-icon></div>
-            </div>
-            <h3 class="skills-title">Illustration</h3>
-            <p class="skills-content">I create dynamic, expressive illustrations that bring characters and stories to
-                life. From fully rendered digital portraits to storytelling through comics, my work focuses on capturing
-                emotion, movement, and personality. I specialize in stylized digital art, blending bold shapes, vibrant
-                colors, and detailed rendering to create eye-catching visuals. Whether it’s character art, commissioned
-                pieces, or visual storytelling, my goal is to craft illustrations that feel alive and memorable.</p>
-            <button class="learn-more">Learn More</button>
-        </div>
-
-        <div class="fun-fact">
-            <div><iconify-icon icon="pixel:book-heart-solid"></iconify-icon></div>
-            <p>fun fact: I fully built the site you are on right now!! check my code if you don’t believe me, its full
-                of raccoons!!</p>
-        </div>
-
-        <h2>Ready To Collaborate?</h2>
-
-        <div class="contact-window">
-            <div class="contact-header">
-                <iconify-icon icon="pixelarticons:mail"></iconify-icon>
-                <p class="window-title">contact.exe</p>
-                <div class="window-box"><img src="assets/minimize-icon.svg"></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:frame"></iconify-icon></div>
-                <div class="window-box"><iconify-icon icon="pixelarticons:close"></iconify-icon></div>
-            </div>
-
-            <h3>Connect with me!!</h3>
-            <ul class="social-icons">
-                <li><a href=""><iconify-icon icon="pixel:instagram"></iconify-icon></a></li>
-                <li><a href=""><iconify-icon icon="pixel:linkedin"></iconify-icon></a></li>
-                <li><a href=""><iconify-icon icon="pixelarticons:mail-unread"></iconify-icon></a></li>
-                <li><a href=""><iconify-icon icon="pixel:phone-ringing-high-solid"></iconify-icon></a></li>
+            <h4>What It Includes</h4>
+            <h5>Branding</h5>
+            <ul>
+              <li>Brand Consultation</li>
+              <li>Competitive Research and Moodboard</li>
+              <li>Logo Design in Multiple Formats</li>
+              <li>Color Palettes</li>
+              <li>Typography System</li>
+              <li>Brand Identity Guide</li>
+              <li>Logo Usage</li>
+              <li>Do’s and Don’ts for Brand Presentations</li>
+              <li>Visual Examples of Consistent Branding</li>
+              <li>Color and Typography Specs</li>
             </ul>
-            <p>Email: <a href="mailto:natalia.martinez44@outlook.com">natalia.martinez44@outlook.com</a></p>
-            <p>Phone: <a href="tel:+18329314332">+1 (832) 931-4332</a></p>
+          </article>
         </div>
 
-</body>
+        <div class="pack-list">
+          <article class="pack2" aria-labelledby="pack2-title">
+            <header class="pack-head">
+              <iconify-icon icon="mdi:web" aria-hidden="true"></iconify-icon>
+              <h3 id="pack2-title">Professional</h3>
+              <p class="pack-description">Website Design and Development</p>
+            </header>
 
+            <h4>What It Includes</h4>
+            <h5>Branding</h5>
+            <ul>
+              <li>Brand & Website Consultation</li>
+              <li>Competitive Research and Moodboard</li>
+              <li>Logo Design in Multiple Formats</li>
+              <li>Color Palettes</li>
+              <li>Typography System</li>
+              <li>Brand Identity Guide</li>
+              <li>Logo Usage</li>
+              <li>Do’s and Don’ts for Brand Presentations</li>
+              <li>Visual Examples of Consistent Branding</li>
+              <li>Color and Typography Specs</li>
+            </ul>
+
+            <h5>Website</h5>
+            <ul>
+              <li>Audit of Current Site (If Applicable)</li>
+              <li>Custom Website Layout and Design</li>
+              <li>Up to 3–5 Pages</li>
+              <li>Mobile and Tablet Responsiveness</li>
+              <li>Basic SEO Optimization</li>
+              <li>Website Build</li>
+              <li>Testing and Troubleshooting</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="pack-list">
+          <article class="pack3" aria-labelledby="pack3-title">
+            <header class="pack-head">
+              <iconify-icon
+                icon="mdi:briefcase"
+                aria-hidden="true"
+              ></iconify-icon>
+              <h3 id="pack3-title">Professional</h3>
+              <p class="pack-description">Full Branding & Website</p>
+            </header>
+
+            <h4>What It Includes</h4>
+            <h5>Branding</h5>
+            <ul>
+              <li>Brand & Website Consultation</li>
+              <li>Competitive Research and Moodboard</li>
+              <li>Logo Design in Multiple Formats</li>
+              <li>Color Palettes</li>
+              <li>Typography System</li>
+              <li>Brand Identity Guide</li>
+              <li>Logo Usage</li>
+              <li>Do’s and Don’ts for Brand Presentations</li>
+              <li>Visual Examples of Consistent Branding</li>
+              <li>Color and Typography Specs</li>
+              <li>Business Card Design</li>
+            </ul>
+
+            <h5>Website</h5>
+            <ul>
+              <li>Audit of Current Site (If Applicable)</li>
+              <li>Custom Website Layout and Design</li>
+              <li>Up to 5–7+ Pages</li>
+              <li>Mobile and Tablet Responsiveness</li>
+              <li>Basic SEO Optimization</li>
+              <li>Website Build</li>
+              <li>Testing and Troubleshooting</li>
+            </ul>
+
+            <h5>Social Media</h5>
+            <ul>
+              <li>Profile and Cover Image Designs</li>
+              <li>Story Highlight Icons</li>
+              <li>5 Post Templates</li>
+              <li>3 Story Templates</li>
+              <li>Guidance on Visual Consistency and Posting Style</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section
+        class="portfolio"
+        id="portfolio"
+        aria-labelledby="portfolio-heading"
+      ></section>
+    </main>
+
+    <footer id="contact" aria-labelledby="footer-heading">
+      <h2 id="footer-heading">Contact</h2>
+      <!-- ...existing code... -->
+    </footer>
+  </body>
 </html>
