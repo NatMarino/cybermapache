@@ -92,6 +92,12 @@ nav {
   align-self: stretch;
   flex-direction: column;
   text-align: center;
+  background-image: url(assets/edited-photo2.png);
+  /* background-size: cover; */
+
+  max-width: 90% !important;
+  border-radius: 50px;
+  box-sizing: border-box;
 
   h1 {
     color: var(--neon-green);
@@ -101,12 +107,11 @@ nav {
   p {
     color: var(--white);
     font-size: 1rem;
-    margin: 0.5rem 0 3rem 0;
-    max-width: 700px;
   }
 }
 
 .cta-btn {
+  background-color: #151514;
   display: flex;
   padding: 2.125rem 2.6875rem;
   justify-content: center;
