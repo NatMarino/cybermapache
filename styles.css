@@ -110,6 +110,15 @@ nav {
   }
 }
 
+.cta-heading {
+  color: var(--bright-purple);
+  font-family: Audiowide, cursive;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
 .cta-btn {
   background-color: #151514;
   display: flex;
@@ -172,6 +181,18 @@ nav {
   }
 }
 
+.section-heading {
+  color: var(--bright-purple);
+  font-family: Audiowide, cursive;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  letter-spacing: 0.17188rem;
+  text-transform: uppercase;
+}
+
 .resume {
   display: flex;
   width: 100%;
@@ -180,34 +201,10 @@ nav {
   justify-content: center;
   align-items: flex-start;
 
-  #resume-heading {
-    color: var(--bright-purple);
-    font-family: Audiowide;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    letter-spacing: 0.17188rem;
-    text-transform: uppercase;
-  }
-
   .resume-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
-    h2 {
-      color: var(--alienGreen, #6c9670);
-      font-family: Audiowide;
-      font-size: 2rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      margin: 0;
-      letter-spacing: 0.17188rem;
-      text-transform: uppercase;
-    }
   }
 
   .exp-edu {
@@ -318,18 +315,11 @@ nav {
   padding: 3rem 0;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   width: 100%;
 }
 
-h2 {
-  color: var(--bright-purple);
-  font-size: 2.5rem;
-  margin: 0;
-  text-align: center;
-  letter-spacing: 0.23438rem;
-  text-transform: capitalize;
-}
+/* Section headings use .section-heading for consistent styling */
 
 .design-packages {
   display: flex;
@@ -338,7 +328,7 @@ h2 {
   align-items: center;
   gap: 1rem;
 
-  h2 {
+  .section-heading {
     text-transform: uppercase;
   }
 }
@@ -393,5 +383,151 @@ ul {
 
   ul {
     padding: 0 1rem;
+  }
+}
+
+.portfolio-thumbnails {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-words {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+  align-self: stretch;
+
+  p {
+    color: var(--white, #f2f2f2);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem; /* 138.889% */
+    margin: 0;
+  }
+}
+
+.project-heading {
+  color: var(--alienGreen, #6c9670);
+  font-family: Audiowide;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.17188rem;
+  margin: 0;
+}
+
+.project-card {
+  width: 30rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  justify-content: space-between;
+  align-self: stretch;
+
+  img {
+    width: 100%;
+    height: 15rem;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-green);
+  margin: 0;
+}
+
+.foot-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+
+.social-links {
+  width: 18rem;
+  p {
+    color: #fff;
+    font-family: Audiowide;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    color: var(--neonGreen, #b2f59f);
+    font-family: Audiowide;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+}
+
+.cta-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  strong {
+    color: #fff;
+    text-align: center;
+    font-family: Audiowide;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.10938rem;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: Audiowide;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
   }
 }
