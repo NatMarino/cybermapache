@@ -43,6 +43,7 @@ h6 {
 body {
   background-color: var(--black);
   overflow-x: hidden;
+  margin: 0;
 }
 
 nav {
@@ -101,7 +102,7 @@ nav {
 
   h1 {
     color: var(--neon-green);
-    font-size: 4.5rem;
+    font-size: 3rem;
     margin: 0;
   }
   p {
@@ -455,13 +456,14 @@ footer {
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: var(--dark-green);
-  margin: 0;
 }
 
 .foot-main {
@@ -472,18 +474,34 @@ footer {
   align-items: center;
   padding: 0 3rem;
   box-sizing: border-box;
+  gap: 2rem;
+
+  img {
+    height: auto;
+    width: 18rem!important;
+  }
 }
 
 .social-links {
-  width: 18rem;
+  width: 18rem!important;
+
   p {
     color: #fff;
     font-family: Audiowide;
-    font-size: 2.1875rem;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  ul {
+    padding: 1rem 0;
+    margin: 0;
+    width: 18rem;
   }
 
   li {
@@ -494,7 +512,7 @@ footer {
 
     color: var(--neonGreen, #b2f59f);
     font-family: Audiowide;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -509,11 +527,14 @@ footer {
   align-items: center;
   text-align: center;
   gap: 1rem;
+  width: 100%!important; 
+  margin: 0 auto;
+  
   strong {
     color: #fff;
     text-align: center;
     font-family: Audiowide;
-    font-size: 2.1875rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -524,10 +545,42 @@ footer {
     color: #fff;
     text-align: center;
     font-family: Audiowide;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: capitalize;
   }
+
+  .cta-btn {
+    padding: 1rem;
+    font-size: 1rem;
+
+  }
 }
+
+
+/* media queries and mobile starting */
+
+html {
+  font-size: 16px; /* default for desktops */
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
+
