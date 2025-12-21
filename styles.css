@@ -656,6 +656,36 @@ a:hover {
 }
 }
 
+/* portfolio pages styling */
+
+.back-link {
+display: flex;
+    padding: .5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--neonGreen, #B2F59F);
+    background: var(--black, #151514);
+    width: fit-content;
+    text-decoration: none;
+
+    color: var(--cuteLavendar, #D09FF5);
+text-align: center;
+font-family: Silkscreen;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+svg {
+  width: 1.5rem;
+align-self: stretch;
+aspect-ratio: 1/1;
+}
+
+}
+
 
 /* media queries and mobile starting */
 
@@ -678,140 +708,6 @@ html {
 @media (max-width: 400px) {
   html {
     font-size: 13px;
-  }
-}
-
-/* Responsive enhancements: tablet and mobile tweaks */
-@media (max-width: 900px) {
-  nav {
-    height: 80px;
-    padding: 0 1rem;
-  }
-
-  nav ul {
-    padding: 0 1rem;
-    gap: 10px;
-  }
-
-  nav ul a {
-    font-size: 1.1rem;
-    padding: 8px;
-  }
-
-  .hero {
-    padding: 3rem;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-
-  .project-card {
-    width: calc(50% - 1.5rem);
-    padding: 1%;
-  }
-
-  .project-card img {
-    height: 12rem;
-  }
-
-  .resume img {
-    width: 20rem;
-    height: auto;
-  }
-
-  .foot-main {
-    flex-direction: column;
-    padding: 1.5rem;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .foot-main img {
-    width: 12rem !important;
-  }
-
-  .social-links {
-    width: 100% !important;
-    text-align: center;
-  }
-
-  .footer-nav ul {
-    justify-content: center;
-    padding: 1rem 0;
-  }
-
-  .cta-btn {
-    font-size: 1.25rem;
-    padding: 1rem 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  nav {
-    height: 70px;
-    padding: 0 0.75rem;
-  }
-
-  nav ul {
-    gap: 8px;
-    padding: 0.5rem;
-  }
-
-  nav ul a {
-    font-size: 1rem;
-    padding: 6px;
-  }
-
-  .hero {
-    padding: 2rem;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-  }
-
-  .project-card {
-    width: 100%;
-  }
-
-  .project-card img {
-    height: 10rem;
-  }
-
-  .resume img {
-    width: 100%;
-    max-width: 18rem;
-    height: auto;
-  }
-
-  .foot-main img {
-    width: 8rem !important;
-  }
-
-  .social-links ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    width: auto;
-  }
-
-  .footer-content {
-    padding: 1rem;
-  }
-
-  .cta-btn {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
   }
 }
 
