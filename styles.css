@@ -777,6 +777,28 @@ html {
   html {
     font-size: 15px;
   }
+
+  .hero {
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    justify-content: center;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    .cta-btn {
+      gap: 1rem;
+      padding:  2rem 1rem;
+       font-size: 1.5rem;
+       
+       justify-content: center!important;
+        align-items: center!important;
+       width: 100%;
+    }
+
+  }
 }
 
 @media (max-width: 600px) {
